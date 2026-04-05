@@ -1,0 +1,4315 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "curriculum": {
+      "math": "Common Core State Standards for Mathematics (CCSSM) K-8",
+      "science": "Next Generation Science Standards (NGSS) K-8"
+    },
+    "grades": "1-8",
+    "subjects": [
+      "math",
+      "physics",
+      "chemistry",
+      "earth_science"
+    ],
+    "note": "Chemistry topics appear from grade 2 onward per NGSS; full chemistry strand begins grade 5. Earth Science woven into science strand throughout. Topics include standard_id (CCSSM or NGSS code), unlock dependencies, and recommended question formats."
+  },
+  "subjects": {
+    "math": {
+      "grade_1": [
+        {
+          "id": "math_1_01",
+          "standard": "1.OA.A.1",
+          "name": "Addition word problems within 20",
+          "description": "Solve addition word problems using objects, drawings, and equations",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "math_1_02",
+            "math_1_03"
+          ]
+        },
+        {
+          "id": "math_1_02",
+          "standard": "1.OA.A.2",
+          "name": "Subtraction word problems within 20",
+          "description": "Solve subtraction word problems using objects, drawings, and equations",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_1_01"
+          ],
+          "unlocks": [
+            "math_1_04"
+          ]
+        },
+        {
+          "id": "math_1_03",
+          "standard": "1.OA.B.3",
+          "name": "Properties of addition",
+          "description": "Apply commutative and associative properties of addition",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_1_01"
+          ],
+          "unlocks": [
+            "math_1_04"
+          ]
+        },
+        {
+          "id": "math_1_04",
+          "standard": "1.OA.C.6",
+          "name": "Addition and subtraction fluency within 10",
+          "description": "Add and subtract within 10 using mental strategies",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            5
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_1_02",
+            "math_1_03"
+          ],
+          "unlocks": [
+            "math_1_05",
+            "math_1_06"
+          ]
+        },
+        {
+          "id": "math_1_05",
+          "standard": "1.NBT.A.1",
+          "name": "Count to 120",
+          "description": "Count, read, and write numerals to 120; understand place in sequence",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_1_04"
+          ],
+          "unlocks": [
+            "math_1_06"
+          ]
+        },
+        {
+          "id": "math_1_06",
+          "standard": "1.NBT.B.2",
+          "name": "Tens and ones (place value)",
+          "description": "Understand two-digit numbers as bundles of tens and ones",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_1_05"
+          ],
+          "unlocks": [
+            "math_1_07"
+          ]
+        },
+        {
+          "id": "math_1_07",
+          "standard": "1.NBT.C.4",
+          "name": "Adding within 100",
+          "description": "Add within 100 using place value strategies",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_1_06"
+          ],
+          "unlocks": [
+            "math_1_08"
+          ]
+        },
+        {
+          "id": "math_1_08",
+          "standard": "1.MD.B.3",
+          "name": "Telling time to the hour and half-hour",
+          "description": "Tell and write time in hours and half-hours using analog and digital clocks",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "math_1_05"
+          ],
+          "unlocks": [
+            "math_2_01"
+          ]
+        },
+        {
+          "id": "math_1_09",
+          "standard": "1.G.A.1",
+          "name": "2D and 3D shapes",
+          "description": "Distinguish between defining attributes of shapes; build and draw shapes",
+          "grade": 1,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "math_2_09"
+          ]
+        }
+      ],
+      "grade_2": [
+        {
+          "id": "math_2_01",
+          "standard": "2.OA.A.1",
+          "name": "Addition and subtraction word problems within 100",
+          "description": "Use addition and subtraction within 100 to solve one- and two-step word problems",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_1_07"
+          ],
+          "unlocks": [
+            "math_2_02",
+            "math_2_03"
+          ]
+        },
+        {
+          "id": "math_2_02",
+          "standard": "2.OA.B.2",
+          "name": "Fluency with addition and subtraction within 20",
+          "description": "Fluently add and subtract within 20 using mental strategies",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_2_01"
+          ],
+          "unlocks": [
+            "math_2_04"
+          ]
+        },
+        {
+          "id": "math_2_03",
+          "standard": "2.OA.C.3",
+          "name": "Even and odd numbers",
+          "description": "Determine whether a group of objects is odd or even; write equations for even numbers",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "math_2_01"
+          ],
+          "unlocks": [
+            "math_2_05"
+          ]
+        },
+        {
+          "id": "math_2_04",
+          "standard": "2.NBT.A.1",
+          "name": "Hundreds, tens, and ones",
+          "description": "Understand three-digit numbers as hundreds, tens, and ones",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_2_02"
+          ],
+          "unlocks": [
+            "math_2_06"
+          ]
+        },
+        {
+          "id": "math_2_05",
+          "standard": "2.OA.C.4",
+          "name": "Introduction to arrays and repeated addition",
+          "description": "Use addition to find the total number of objects in rectangular arrays",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_2_03"
+          ],
+          "unlocks": [
+            "math_3_02"
+          ]
+        },
+        {
+          "id": "math_2_06",
+          "standard": "2.NBT.B.7",
+          "name": "Add and subtract within 1000",
+          "description": "Add and subtract within 1000 using place value and properties",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_2_04"
+          ],
+          "unlocks": [
+            "math_2_07"
+          ]
+        },
+        {
+          "id": "math_2_07",
+          "standard": "2.MD.A.1",
+          "name": "Measuring length",
+          "description": "Measure the length of an object using appropriate tools",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_2_06"
+          ],
+          "unlocks": [
+            "math_2_08"
+          ]
+        },
+        {
+          "id": "math_2_08",
+          "standard": "2.MD.C.7",
+          "name": "Telling time to the nearest 5 minutes",
+          "description": "Tell and write time from analog and digital clocks to the nearest five minutes",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "math_1_08"
+          ],
+          "unlocks": [
+            "math_3_08"
+          ]
+        },
+        {
+          "id": "math_2_09",
+          "standard": "2.G.A.1",
+          "name": "Shapes and their attributes",
+          "description": "Recognize and draw shapes with specific attributes; partition shapes",
+          "grade": 2,
+          "subject": "math",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_1_09"
+          ],
+          "unlocks": [
+            "math_3_09"
+          ]
+        }
+      ],
+      "grade_3": [
+        {
+          "id": "math_3_01",
+          "standard": "3.OA.A.1",
+          "name": "Multiplication concepts",
+          "description": "Interpret multiplication as equal groups; represent with equations",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_2_05"
+          ],
+          "unlocks": [
+            "math_3_02",
+            "math_3_03"
+          ]
+        },
+        {
+          "id": "math_3_02",
+          "standard": "3.OA.A.2",
+          "name": "Division concepts",
+          "description": "Interpret division as equal sharing or grouping; relate to multiplication",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_3_01",
+            "math_2_05"
+          ],
+          "unlocks": [
+            "math_3_04"
+          ]
+        },
+        {
+          "id": "math_3_03",
+          "standard": "3.OA.B.5",
+          "name": "Properties of multiplication",
+          "description": "Apply commutative, associative, and distributive properties",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "true_false_why",
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_3_01"
+          ],
+          "unlocks": [
+            "math_3_04"
+          ]
+        },
+        {
+          "id": "math_3_04",
+          "standard": "3.OA.C.7",
+          "name": "Multiplication and division fluency within 100",
+          "description": "Fluently multiply and divide within 100; know all products of one-digit numbers",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_3_02",
+            "math_3_03"
+          ],
+          "unlocks": [
+            "math_3_05",
+            "math_3_06"
+          ]
+        },
+        {
+          "id": "math_3_05",
+          "standard": "3.OA.D.8",
+          "name": "Two-step word problems",
+          "description": "Solve two-step word problems using four operations; assess reasonableness",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_3_04"
+          ],
+          "unlocks": [
+            "math_4_01"
+          ]
+        },
+        {
+          "id": "math_3_06",
+          "standard": "3.NBT.A.2",
+          "name": "Add and subtract within 1000 fluently",
+          "description": "Fluently add and subtract within 1000 using algorithms based on place value",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_3_04"
+          ],
+          "unlocks": [
+            "math_3_07"
+          ]
+        },
+        {
+          "id": "math_3_07",
+          "standard": "3.NF.A.1",
+          "name": "Introduction to fractions",
+          "description": "Understand fractions as parts of a whole; unit fractions on number line",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_3_06"
+          ],
+          "unlocks": [
+            "math_3_08",
+            "math_4_04"
+          ]
+        },
+        {
+          "id": "math_3_08",
+          "standard": "3.MD.A.1",
+          "name": "Time and elapsed time",
+          "description": "Tell and write time to the nearest minute; solve elapsed time problems",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_2_08"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "math_3_09",
+          "standard": "3.G.A.1",
+          "name": "Quadrilaterals and shape categories",
+          "description": "Understand categories of shapes; reason about shared attributes",
+          "grade": 3,
+          "subject": "math",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_2_09"
+          ],
+          "unlocks": [
+            "math_4_09"
+          ]
+        }
+      ],
+      "grade_4": [
+        {
+          "id": "math_4_01",
+          "standard": "4.OA.A.1",
+          "name": "Multiplicative comparisons",
+          "description": "Interpret multiplication equations as comparisons; solve comparison word problems",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "word_problem",
+            "multiple_choice",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "math_3_05"
+          ],
+          "unlocks": [
+            "math_4_02"
+          ]
+        },
+        {
+          "id": "math_4_02",
+          "standard": "4.OA.B.4",
+          "name": "Factors, multiples, primes, and composites",
+          "description": "Find factor pairs; identify prime and composite numbers 1\u2013100",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "fill_blank_numeric",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_4_01"
+          ],
+          "unlocks": [
+            "math_4_03"
+          ]
+        },
+        {
+          "id": "math_4_03",
+          "standard": "4.OA.C.5",
+          "name": "Number patterns",
+          "description": "Generate and analyze patterns; identify features not explicit in the rule",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_4_02"
+          ],
+          "unlocks": [
+            "math_5_01"
+          ]
+        },
+        {
+          "id": "math_4_04",
+          "standard": "4.NF.A.1",
+          "name": "Equivalent fractions",
+          "description": "Explain equivalent fractions using visual models; generate equivalent fractions",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_3_07"
+          ],
+          "unlocks": [
+            "math_4_05"
+          ]
+        },
+        {
+          "id": "math_4_05",
+          "standard": "4.NF.B.3",
+          "name": "Add and subtract fractions",
+          "description": "Add and subtract mixed numbers and fractions with like denominators",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_4_04"
+          ],
+          "unlocks": [
+            "math_4_06"
+          ]
+        },
+        {
+          "id": "math_4_06",
+          "standard": "4.NF.B.4",
+          "name": "Multiply fractions by whole numbers",
+          "description": "Understand fraction as multiple of unit fraction; multiply fractions by whole numbers",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_4_05"
+          ],
+          "unlocks": [
+            "math_5_04"
+          ]
+        },
+        {
+          "id": "math_4_07",
+          "standard": "4.NF.C.6",
+          "name": "Decimal notation for fractions",
+          "description": "Use decimal notation for fractions with denominators 10 or 100",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_4_05"
+          ],
+          "unlocks": [
+            "math_5_03"
+          ]
+        },
+        {
+          "id": "math_4_08",
+          "standard": "4.MD.A.1",
+          "name": "Measurement conversions",
+          "description": "Know relative sizes of units; convert larger to smaller units within a system",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_3_06"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "math_4_09",
+          "standard": "4.G.A.1",
+          "name": "Lines, angles, and rays",
+          "description": "Draw and identify points, lines, line segments, rays, and angles",
+          "grade": 4,
+          "subject": "math",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_3_09"
+          ],
+          "unlocks": [
+            "math_5_09"
+          ]
+        }
+      ],
+      "grade_5": [
+        {
+          "id": "math_5_01",
+          "standard": "5.OA.A.1",
+          "name": "Order of operations",
+          "description": "Use parentheses, brackets, braces; evaluate expressions with these symbols",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_4_03"
+          ],
+          "unlocks": [
+            "math_5_02"
+          ]
+        },
+        {
+          "id": "math_5_02",
+          "standard": "5.OA.B.3",
+          "name": "Numerical patterns and graphing",
+          "description": "Generate two numerical patterns using two given rules; graph on coordinate plane",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_5_01"
+          ],
+          "unlocks": [
+            "math_6_05"
+          ]
+        },
+        {
+          "id": "math_5_03",
+          "standard": "5.NBT.A.3",
+          "name": "Decimals to thousandths",
+          "description": "Read, write, compare decimals to thousandths; understand place value system",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "ordering",
+            "true_false_why",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_4_07"
+          ],
+          "unlocks": [
+            "math_5_04"
+          ]
+        },
+        {
+          "id": "math_5_04",
+          "standard": "5.NF.A.1",
+          "name": "Add and subtract fractions with unlike denominators",
+          "description": "Add and subtract fractions with unlike denominators using equivalent fractions",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_5_03",
+            "math_4_06"
+          ],
+          "unlocks": [
+            "math_5_05"
+          ]
+        },
+        {
+          "id": "math_5_05",
+          "standard": "5.NF.B.4",
+          "name": "Multiply fractions",
+          "description": "Multiply fractions and mixed numbers; interpret multiplication as scaling",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_5_04"
+          ],
+          "unlocks": [
+            "math_5_06"
+          ]
+        },
+        {
+          "id": "math_5_06",
+          "standard": "5.NF.B.7",
+          "name": "Divide fractions by whole numbers and whole numbers by fractions",
+          "description": "Apply understanding of division to divide unit fractions",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_5_05"
+          ],
+          "unlocks": [
+            "math_6_01"
+          ]
+        },
+        {
+          "id": "math_5_07",
+          "standard": "5.NBT.B.5",
+          "name": "Multi-digit multiplication",
+          "description": "Fluently multiply multi-digit whole numbers using standard algorithm",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_4_01"
+          ],
+          "unlocks": [
+            "math_5_08"
+          ]
+        },
+        {
+          "id": "math_5_08",
+          "standard": "5.NBT.B.6",
+          "name": "Multi-digit division",
+          "description": "Find whole-number quotients with up to four-digit dividends and two-digit divisors",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_5_07"
+          ],
+          "unlocks": [
+            "math_6_01"
+          ]
+        },
+        {
+          "id": "math_5_09",
+          "standard": "5.G.A.1",
+          "name": "Coordinate plane",
+          "description": "Use a coordinate system; graph points in the first quadrant",
+          "grade": 5,
+          "subject": "math",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_4_09"
+          ],
+          "unlocks": [
+            "math_6_05"
+          ]
+        }
+      ],
+      "grade_6": [
+        {
+          "id": "math_6_01",
+          "standard": "6.RP.A.1",
+          "name": "Ratios and unit rates",
+          "description": "Understand ratio concepts; use ratio language to describe relationships",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_5_06",
+            "math_5_08"
+          ],
+          "unlocks": [
+            "math_6_02"
+          ]
+        },
+        {
+          "id": "math_6_02",
+          "standard": "6.RP.A.3",
+          "name": "Ratios, percentages, and proportional reasoning",
+          "description": "Use ratio and rate reasoning to solve problems including percent",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_6_01"
+          ],
+          "unlocks": [
+            "math_6_03",
+            "math_7_01"
+          ]
+        },
+        {
+          "id": "math_6_03",
+          "standard": "6.NS.C.5",
+          "name": "Negative numbers and the number line",
+          "description": "Understand positive and negative numbers; use on number line and coordinate plane",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_6_02"
+          ],
+          "unlocks": [
+            "math_6_04"
+          ]
+        },
+        {
+          "id": "math_6_04",
+          "standard": "6.NS.B.3",
+          "name": "Operations with decimals",
+          "description": "Fluently add, subtract, multiply, divide multi-digit decimals",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_6_03"
+          ],
+          "unlocks": [
+            "math_7_02"
+          ]
+        },
+        {
+          "id": "math_6_05",
+          "standard": "6.EE.A.1",
+          "name": "Expressions with exponents",
+          "description": "Write and evaluate numerical expressions involving whole-number exponents",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_5_02",
+            "math_5_09"
+          ],
+          "unlocks": [
+            "math_6_06"
+          ]
+        },
+        {
+          "id": "math_6_06",
+          "standard": "6.EE.A.2",
+          "name": "Algebraic expressions",
+          "description": "Write, read, and evaluate expressions with variables; identify parts of expressions",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_6_05"
+          ],
+          "unlocks": [
+            "math_6_07"
+          ]
+        },
+        {
+          "id": "math_6_07",
+          "standard": "6.EE.B.5",
+          "name": "Equations and inequalities",
+          "description": "Understand solving equations and inequalities; substitute values to check solutions",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "true_false_why",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_6_06"
+          ],
+          "unlocks": [
+            "math_7_03"
+          ]
+        },
+        {
+          "id": "math_6_08",
+          "standard": "6.SP.A.1",
+          "name": "Statistical questions and data",
+          "description": "Recognize statistical questions; describe data distributions using mean, median, mode, range",
+          "grade": 6,
+          "subject": "math",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "ordering",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_5_02"
+          ],
+          "unlocks": [
+            "math_7_07"
+          ]
+        }
+      ],
+      "grade_7": [
+        {
+          "id": "math_7_01",
+          "standard": "7.RP.A.2",
+          "name": "Proportional relationships",
+          "description": "Recognize and represent proportional relationships; compute unit rates with fractions",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_6_02"
+          ],
+          "unlocks": [
+            "math_7_02"
+          ]
+        },
+        {
+          "id": "math_7_02",
+          "standard": "7.NS.A.1",
+          "name": "Operations with integers",
+          "description": "Add, subtract, multiply, divide rational numbers including negative numbers",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_7_01",
+            "math_6_04"
+          ],
+          "unlocks": [
+            "math_7_03"
+          ]
+        },
+        {
+          "id": "math_7_03",
+          "standard": "7.EE.A.1",
+          "name": "Linear expressions and equations",
+          "description": "Apply properties to add, subtract, factor, expand linear expressions; solve linear equations",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_7_02",
+            "math_6_07"
+          ],
+          "unlocks": [
+            "math_7_04",
+            "math_8_02"
+          ]
+        },
+        {
+          "id": "math_7_04",
+          "standard": "7.EE.B.4",
+          "name": "Solving real-world problems with equations",
+          "description": "Solve word problems leading to linear equations and inequalities",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_7_03"
+          ],
+          "unlocks": [
+            "math_8_01"
+          ]
+        },
+        {
+          "id": "math_7_05",
+          "standard": "7.G.A.1",
+          "name": "Scale drawings",
+          "description": "Solve problems involving scale drawings of geometric figures",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "math_6_01"
+          ],
+          "unlocks": [
+            "math_7_06"
+          ]
+        },
+        {
+          "id": "math_7_06",
+          "standard": "7.G.B.4",
+          "name": "Area and circumference of circles",
+          "description": "Know and use formulas for area and circumference of circles",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_7_05"
+          ],
+          "unlocks": [
+            "math_8_05"
+          ]
+        },
+        {
+          "id": "math_7_07",
+          "standard": "7.SP.A.1",
+          "name": "Sampling and statistical inference",
+          "description": "Understand random sampling; use data from samples to draw inferences about populations",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "math_6_08"
+          ],
+          "unlocks": [
+            "math_8_07"
+          ]
+        },
+        {
+          "id": "math_7_08",
+          "standard": "7.SP.C.5",
+          "name": "Introduction to probability",
+          "description": "Understand probability of a chance event; approximate probability through experiments",
+          "grade": 7,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_6_08"
+          ],
+          "unlocks": [
+            "math_8_07"
+          ]
+        }
+      ],
+      "grade_8": [
+        {
+          "id": "math_8_01",
+          "standard": "8.NS.A.1",
+          "name": "Rational and irrational numbers",
+          "description": "Understand and classify rational vs irrational numbers; approximate irrational numbers",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "math_7_04"
+          ],
+          "unlocks": [
+            "math_8_02"
+          ]
+        },
+        {
+          "id": "math_8_02",
+          "standard": "8.EE.A.1",
+          "name": "Properties of exponents",
+          "description": "Know and apply properties of integer exponents to generate equivalent expressions",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "true_false_why",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_8_01",
+            "math_7_03"
+          ],
+          "unlocks": [
+            "math_8_03"
+          ]
+        },
+        {
+          "id": "math_8_03",
+          "standard": "8.EE.A.3",
+          "name": "Scientific notation",
+          "description": "Use numbers expressed in scientific notation; compare and perform operations",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_8_02"
+          ],
+          "unlocks": [
+            "math_8_04"
+          ]
+        },
+        {
+          "id": "math_8_04",
+          "standard": "8.EE.B.5",
+          "name": "Linear relationships and slope",
+          "description": "Graph proportional relationships; interpret unit rate as slope; compare relationships",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_8_03"
+          ],
+          "unlocks": [
+            "math_8_05"
+          ]
+        },
+        {
+          "id": "math_8_05",
+          "standard": "8.G.B.7",
+          "name": "Pythagorean theorem",
+          "description": "Apply Pythagorean theorem to find side lengths; determine right triangles",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "math_8_04",
+            "math_7_06"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "math_8_06",
+          "standard": "8.EE.C.7",
+          "name": "Solving linear equations",
+          "description": "Solve linear equations in one variable including equations with rational coefficients",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_8_04"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "math_8_07",
+          "standard": "8.SP.A.1",
+          "name": "Scatter plots and bivariate data",
+          "description": "Construct and interpret scatter plots; describe clustering, outliers, association",
+          "grade": 8,
+          "subject": "math",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "math_7_07",
+            "math_7_08"
+          ],
+          "unlocks": []
+        }
+      ]
+    },
+    "physics": {
+      "grade_1": [
+        {
+          "id": "phys_1_01a",
+          "standard": "NGSS 1-PS4-1a",
+          "name": "What is sound?",
+          "description": "Sound is a form of energy; all sounds are made by vibrating objects",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "phys_1_01b"
+          ]
+        },
+        {
+          "id": "phys_1_01b",
+          "standard": "NGSS 1-PS4-1b",
+          "name": "Vibrations make sound",
+          "description": "Vibrating objects produce sound; faster vibrations make higher-pitched sounds",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_1_01a"
+          ],
+          "unlocks": [
+            "phys_1_02a"
+          ]
+        },
+        {
+          "id": "phys_1_02a",
+          "standard": "NGSS 1-PS4-2a",
+          "name": "Light and seeing",
+          "description": "We see objects because light travels from a source, hits objects, and enters our eyes",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_1_01b"
+          ],
+          "unlocks": [
+            "phys_1_02b"
+          ]
+        },
+        {
+          "id": "phys_1_02b",
+          "standard": "NGSS 1-PS4-2b",
+          "name": "Light sources and darkness",
+          "description": "Without a light source, objects cannot be seen; shadows form when light is blocked",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_1_02a"
+          ],
+          "unlocks": [
+            "phys_1_03a"
+          ]
+        },
+        {
+          "id": "phys_1_03a",
+          "standard": "NGSS 1-PS4-3a",
+          "name": "Reflection of light",
+          "description": "Light bounces off mirrors and shiny surfaces; the angle of reflection equals the angle of incidence",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_1_02b"
+          ],
+          "unlocks": [
+            "phys_1_03b"
+          ]
+        },
+        {
+          "id": "phys_1_03b",
+          "standard": "NGSS 1-PS4-3b",
+          "name": "Using light to communicate",
+          "description": "Mirrors and reflected light can send signals; examples include lighthouses and mirrors",
+          "grade": 1,
+          "subject": "physics",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_1_03a"
+          ],
+          "unlocks": [
+            "phys_3_03a"
+          ]
+        }
+      ],
+      "grade_2": [
+        {
+          "id": "phys_2_01a",
+          "standard": "NGSS K-2-ETS1-1a",
+          "name": "Pushes and pulls",
+          "description": "Objects at rest stay still until a push or pull acts on them; direction of force matters",
+          "grade": 2,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "phys_2_01b"
+          ]
+        },
+        {
+          "id": "phys_2_01b",
+          "standard": "NGSS K-2-ETS1-1b",
+          "name": "Strength of force and motion",
+          "description": "A stronger push or pull changes an object's speed or direction more than a weaker one",
+          "grade": 2,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_2_01a"
+          ],
+          "unlocks": [
+            "phys_3_01a"
+          ]
+        },
+        {
+          "id": "phys_2_02a",
+          "standard": "NGSS K-2-ETS1-2a",
+          "name": "Observable properties of materials",
+          "description": "Materials have properties: color, hardness, flexibility, texture, absorbency",
+          "grade": 2,
+          "subject": "physics",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "phys_2_02b"
+          ]
+        },
+        {
+          "id": "phys_2_02b",
+          "standard": "NGSS K-2-ETS1-2b",
+          "name": "Choosing materials for a purpose",
+          "description": "Different materials are chosen based on their properties to solve specific problems",
+          "grade": 2,
+          "subject": "physics",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_2_02a"
+          ],
+          "unlocks": [
+            "phys_3_02a"
+          ]
+        }
+      ],
+      "grade_3": [
+        {
+          "id": "phys_3_01a",
+          "standard": "NGSS 3-PS2-1a",
+          "name": "Balanced and unbalanced forces",
+          "description": "When forces are balanced, objects stay still or move at constant speed; unbalanced forces change motion",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_2_01b"
+          ],
+          "unlocks": [
+            "phys_3_01b"
+          ]
+        },
+        {
+          "id": "phys_3_01b",
+          "standard": "NGSS 3-PS2-1b",
+          "name": "How forces change motion",
+          "description": "Objects speed up, slow down, or change direction when an unbalanced force acts on them",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_3_01a"
+          ],
+          "unlocks": [
+            "phys_3_02a",
+            "phys_4_01a"
+          ]
+        },
+        {
+          "id": "phys_3_02a",
+          "standard": "NGSS 3-PS2-3a",
+          "name": "Magnetic attraction and repulsion",
+          "description": "Magnets attract or repel each other; like poles repel, unlike poles attract",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_3_01b",
+            "phys_2_02b"
+          ],
+          "unlocks": [
+            "phys_3_02b"
+          ]
+        },
+        {
+          "id": "phys_3_02b",
+          "standard": "NGSS 3-PS2-3b",
+          "name": "Forces at a distance",
+          "description": "Magnetic and gravitational forces act without direct contact; strength changes with distance",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_3_02a"
+          ],
+          "unlocks": [
+            "phys_4_01a"
+          ]
+        },
+        {
+          "id": "phys_3_03a",
+          "standard": "NGSS 3-PS2-4a",
+          "name": "Gravity pulls objects down",
+          "description": "Earth's gravity pulls all objects toward the ground regardless of their mass",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_1_03b"
+          ],
+          "unlocks": [
+            "phys_3_03b"
+          ]
+        },
+        {
+          "id": "phys_3_03b",
+          "standard": "NGSS 3-PS2-4b",
+          "name": "Friction as a contact force",
+          "description": "Friction is a force that resists motion between surfaces in contact; it can slow objects down",
+          "grade": 3,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_3_03a"
+          ],
+          "unlocks": [
+            "phys_4_02a"
+          ]
+        }
+      ],
+      "grade_4": [
+        {
+          "id": "phys_4_01a",
+          "standard": "NGSS 4-PS3-1a",
+          "name": "Forms of energy",
+          "description": "Energy exists in many forms: light, heat, sound, electrical, chemical, and mechanical",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_3_01b",
+            "phys_3_02b"
+          ],
+          "unlocks": [
+            "phys_4_01b"
+          ]
+        },
+        {
+          "id": "phys_4_01b",
+          "standard": "NGSS 4-PS3-1b",
+          "name": "Energy transfer",
+          "description": "Energy can be transferred from one object to another through collisions, light, electricity, or heat",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_4_01a"
+          ],
+          "unlocks": [
+            "phys_4_02a",
+            "phys_4_03a"
+          ]
+        },
+        {
+          "id": "phys_4_02a",
+          "standard": "NGSS 4-PS3-2a",
+          "name": "Kinetic energy",
+          "description": "Moving objects have kinetic energy; the faster and heavier an object, the more kinetic energy it has",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_4_01b",
+            "phys_3_03b"
+          ],
+          "unlocks": [
+            "phys_4_02b"
+          ]
+        },
+        {
+          "id": "phys_4_02b",
+          "standard": "NGSS 4-PS3-2b",
+          "name": "Potential energy",
+          "description": "Stored energy depends on position or condition; higher objects have more gravitational potential energy",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_4_02a"
+          ],
+          "unlocks": [
+            "phys_5_01a"
+          ]
+        },
+        {
+          "id": "phys_4_03a",
+          "standard": "NGSS 4-PS4-1a",
+          "name": "What are waves?",
+          "description": "Waves are repeating patterns of motion; they carry energy without carrying matter",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_4_01b"
+          ],
+          "unlocks": [
+            "phys_4_03b"
+          ]
+        },
+        {
+          "id": "phys_4_03b",
+          "standard": "NGSS 4-PS4-1b",
+          "name": "Wave properties: amplitude and wavelength",
+          "description": "Amplitude is wave height (energy); wavelength is distance between peaks; frequency is waves per second",
+          "grade": 4,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_4_03a"
+          ],
+          "unlocks": [
+            "phys_5_02a"
+          ]
+        }
+      ],
+      "grade_5": [
+        {
+          "id": "phys_5_01a",
+          "standard": "NGSS 5-PS2-1a",
+          "name": "Gravity on Earth",
+          "description": "Gravity pulls all objects toward Earth's center; strength depends on mass of objects and distance",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_4_02b"
+          ],
+          "unlocks": [
+            "phys_5_01b"
+          ]
+        },
+        {
+          "id": "phys_5_01b",
+          "standard": "NGSS 5-PS2-1b",
+          "name": "Gravity and orbits",
+          "description": "Gravity keeps planets in orbit around the sun and the moon in orbit around Earth",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_5_01a"
+          ],
+          "unlocks": [
+            "phys_6_01a"
+          ]
+        },
+        {
+          "id": "phys_5_02a",
+          "standard": "NGSS 5-PS4-1a",
+          "name": "How light interacts with matter",
+          "description": "Light can be transmitted, reflected, or absorbed depending on the material it hits",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_4_03b"
+          ],
+          "unlocks": [
+            "phys_5_02b"
+          ]
+        },
+        {
+          "id": "phys_5_02b",
+          "standard": "NGSS 5-PS4-1b",
+          "name": "Transparent, translucent, and opaque materials",
+          "description": "Materials are classified by how much light passes through them; this determines what we see",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_5_02a"
+          ],
+          "unlocks": [
+            "phys_6_02a"
+          ]
+        },
+        {
+          "id": "phys_5_03a",
+          "standard": "NGSS 5-PS3-1a",
+          "name": "Food as chemical energy",
+          "description": "Food stores chemical energy that organisms release through digestion and respiration",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            4,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_4_02b"
+          ],
+          "unlocks": [
+            "phys_5_03b"
+          ]
+        },
+        {
+          "id": "phys_5_03b",
+          "standard": "NGSS 5-PS3-1b",
+          "name": "Energy flow in ecosystems",
+          "description": "Energy from the sun flows through ecosystems: producers \u2192 consumers \u2192 decomposers",
+          "grade": 5,
+          "subject": "physics",
+          "difficulty_range": [
+            5,
+            7
+          ],
+          "question_formats": [
+            "ordering",
+            "word_problem",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "phys_5_03a"
+          ],
+          "unlocks": [
+            "phys_6_03a"
+          ]
+        }
+      ],
+      "grade_6": [
+        {
+          "id": "phys_6_01a",
+          "standard": "NGSS MS-PS2-1a",
+          "name": "Newton's First Law \u2014 inertia",
+          "description": "Objects at rest stay at rest and objects in motion stay in motion unless acted on by a force",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_5_01b"
+          ],
+          "unlocks": [
+            "phys_6_01b"
+          ]
+        },
+        {
+          "id": "phys_6_01b",
+          "standard": "NGSS MS-PS2-1b",
+          "name": "Newton's Second Law \u2014 F = ma",
+          "description": "Force equals mass times acceleration; greater force = greater acceleration; greater mass = less acceleration",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_6_01a"
+          ],
+          "unlocks": [
+            "phys_6_01c"
+          ]
+        },
+        {
+          "id": "phys_6_01c",
+          "standard": "NGSS MS-PS2-1c",
+          "name": "Newton's Third Law \u2014 action and reaction",
+          "description": "For every action there is an equal and opposite reaction; forces always come in pairs",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_6_01b"
+          ],
+          "unlocks": [
+            "phys_7_01a"
+          ]
+        },
+        {
+          "id": "phys_6_02a",
+          "standard": "NGSS MS-PS4-1a",
+          "name": "Wave speed, frequency, and wavelength",
+          "description": "Wave speed = frequency \u00d7 wavelength; these properties are mathematically related",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "phys_5_02b"
+          ],
+          "unlocks": [
+            "phys_6_02b"
+          ]
+        },
+        {
+          "id": "phys_6_02b",
+          "standard": "NGSS MS-PS4-1b",
+          "name": "Sound waves and pitch",
+          "description": "Sound is a longitudinal wave; pitch depends on frequency; loudness depends on amplitude",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_6_02a"
+          ],
+          "unlocks": [
+            "phys_7_02a"
+          ]
+        },
+        {
+          "id": "phys_6_03a",
+          "standard": "NGSS MS-PS3-1a",
+          "name": "Kinetic energy and mass formula",
+          "description": "KE = \u00bdmv\u00b2; kinetic energy increases with mass and with the square of speed",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "phys_5_03b"
+          ],
+          "unlocks": [
+            "phys_6_03b"
+          ]
+        },
+        {
+          "id": "phys_6_03b",
+          "standard": "NGSS MS-PS3-1b",
+          "name": "Gravitational potential energy",
+          "description": "GPE = mgh; potential energy depends on mass, gravity, and height above the ground",
+          "grade": 6,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "word_problem",
+            "multi_step",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_6_03a"
+          ],
+          "unlocks": [
+            "phys_7_03a"
+          ]
+        }
+      ],
+      "grade_7": [
+        {
+          "id": "phys_7_01a",
+          "standard": "NGSS MS-PS2-2a",
+          "name": "Gravitational force and mass",
+          "description": "Gravitational force increases with mass; every object with mass attracts every other object",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_6_01c"
+          ],
+          "unlocks": [
+            "phys_7_01b"
+          ]
+        },
+        {
+          "id": "phys_7_01b",
+          "standard": "NGSS MS-PS2-2b",
+          "name": "Electrostatic force",
+          "description": "Like charges repel, opposite charges attract; force weakens with distance (inverse square law)",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_7_01a"
+          ],
+          "unlocks": [
+            "phys_8_01a"
+          ]
+        },
+        {
+          "id": "phys_7_02a",
+          "standard": "NGSS MS-PS4-2a",
+          "name": "The electromagnetic spectrum",
+          "description": "EM waves range from radio waves to gamma rays; all travel at the speed of light in a vacuum",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "ordering",
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_6_02b"
+          ],
+          "unlocks": [
+            "phys_7_02b"
+          ]
+        },
+        {
+          "id": "phys_7_02b",
+          "standard": "NGSS MS-PS4-2b",
+          "name": "Applications of the EM spectrum",
+          "description": "Different EM waves have different uses: radio for communication, X-rays for imaging, UV for sterilization",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_7_02a"
+          ],
+          "unlocks": [
+            "phys_8_02a"
+          ]
+        },
+        {
+          "id": "phys_7_03a",
+          "standard": "NGSS MS-PS3-3a",
+          "name": "Energy transformation examples",
+          "description": "Energy converts between forms: chemical \u2192 kinetic in a car, electrical \u2192 light in a bulb",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "ordering",
+            "word_problem",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "phys_6_03b"
+          ],
+          "unlocks": [
+            "phys_7_03b"
+          ]
+        },
+        {
+          "id": "phys_7_03b",
+          "standard": "NGSS MS-PS3-3b",
+          "name": "Conservation of energy",
+          "description": "Total energy in a closed system is always conserved; energy lost to heat is still energy",
+          "grade": 7,
+          "subject": "physics",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "true_false_why",
+            "word_problem",
+            "multi_step",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "phys_7_03a"
+          ],
+          "unlocks": [
+            "phys_8_03a"
+          ]
+        }
+      ],
+      "grade_8": [
+        {
+          "id": "phys_8_01a",
+          "standard": "NGSS MS-PS2-5a",
+          "name": "Electric fields and current",
+          "description": "Moving electric charges create current; electric fields exert forces on other charges",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_7_01b"
+          ],
+          "unlocks": [
+            "phys_8_01b"
+          ]
+        },
+        {
+          "id": "phys_8_01b",
+          "standard": "NGSS MS-PS2-5b",
+          "name": "Magnetic fields and electromagnets",
+          "description": "Moving charges create magnetic fields; changing magnetic fields induce electric current",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            8,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "phys_8_01a"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "phys_8_02a",
+          "standard": "NGSS MS-PS4-3a",
+          "name": "Analog vs. digital signals",
+          "description": "Analog signals are continuous; digital signals use binary (0s and 1s); digital is more reliable over distance",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "phys_7_02b"
+          ],
+          "unlocks": [
+            "phys_8_02b"
+          ]
+        },
+        {
+          "id": "phys_8_02b",
+          "standard": "NGSS MS-PS4-3b",
+          "name": "Information storage and transmission",
+          "description": "Digital information can be stored, copied, and transmitted without degradation; applications in technology",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_8_02a"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "phys_8_03a",
+          "standard": "NGSS MS-PS3-5a",
+          "name": "Energy in collisions",
+          "description": "In collisions, total energy is conserved; kinetic energy may convert to heat, sound, or deformation",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "fill_blank_numeric",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "phys_7_03b"
+          ],
+          "unlocks": [
+            "phys_8_03b"
+          ]
+        },
+        {
+          "id": "phys_8_03b",
+          "standard": "NGSS MS-PS3-5b",
+          "name": "Applying conservation of energy",
+          "description": "Apply energy conservation to real scenarios: roller coasters, pendulums, bouncing balls",
+          "grade": 8,
+          "subject": "physics",
+          "difficulty_range": [
+            8,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "multi_step",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "phys_8_03a"
+          ],
+          "unlocks": []
+        }
+      ]
+    },
+    "chemistry": {
+      "grade_2": [
+        {
+          "id": "chem_2_01a",
+          "standard": "NGSS 2-PS1-1a",
+          "name": "Describing materials by properties",
+          "description": "Materials can be described and sorted by observable properties: color, texture, hardness, flexibility",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "chem_2_01b"
+          ]
+        },
+        {
+          "id": "chem_2_01b",
+          "standard": "NGSS 2-PS1-1b",
+          "name": "Using properties to identify materials",
+          "description": "Each material has a unique set of properties; properties help us identify and choose materials",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_2_01a"
+          ],
+          "unlocks": [
+            "chem_2_02a"
+          ]
+        },
+        {
+          "id": "chem_2_02a",
+          "standard": "NGSS 2-PS1-2a",
+          "name": "Heating changes materials",
+          "description": "Heating materials can change their properties: ice melts, bread toasts, clay hardens",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_2_01b"
+          ],
+          "unlocks": [
+            "chem_2_02b"
+          ]
+        },
+        {
+          "id": "chem_2_02b",
+          "standard": "NGSS 2-PS1-2b",
+          "name": "Reversible vs. irreversible changes",
+          "description": "Some changes from heating/cooling can be reversed (melting ice); others cannot (burning wood)",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_2_02a"
+          ],
+          "unlocks": [
+            "chem_2_03a"
+          ]
+        },
+        {
+          "id": "chem_2_03a",
+          "standard": "NGSS 2-PS1-3a",
+          "name": "Mixing materials together",
+          "description": "When materials are combined, they may keep their own properties or create new ones",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_2_02b"
+          ],
+          "unlocks": [
+            "chem_2_03b"
+          ]
+        },
+        {
+          "id": "chem_2_03b",
+          "standard": "NGSS 2-PS1-3b",
+          "name": "New materials from mixing",
+          "description": "Some material combinations create new substances with different properties than the originals",
+          "grade": 2,
+          "subject": "chemistry",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_2_03a"
+          ],
+          "unlocks": [
+            "chem_3_01a"
+          ]
+        }
+      ],
+      "grade_3": [
+        {
+          "id": "chem_3_01a",
+          "standard": "NGSS 2-PS1-4a",
+          "name": "Reversible physical changes",
+          "description": "Melting, freezing, dissolving, and evaporating are reversible physical changes",
+          "grade": 3,
+          "subject": "chemistry",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_2_03b"
+          ],
+          "unlocks": [
+            "chem_3_01b"
+          ]
+        },
+        {
+          "id": "chem_3_01b",
+          "standard": "NGSS 2-PS1-4b",
+          "name": "Irreversible chemical changes",
+          "description": "Burning, rusting, and cooking produce new substances; these changes cannot be reversed",
+          "grade": 3,
+          "subject": "chemistry",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_3_01a"
+          ],
+          "unlocks": [
+            "chem_4_01a"
+          ]
+        }
+      ],
+      "grade_4": [
+        {
+          "id": "chem_4_01a",
+          "standard": "NGSS 4-PS1-1a",
+          "name": "Everything is made of matter",
+          "description": "All objects are made of matter; matter takes up space and has mass",
+          "grade": 4,
+          "subject": "chemistry",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_3_01b"
+          ],
+          "unlocks": [
+            "chem_4_01b"
+          ]
+        },
+        {
+          "id": "chem_4_01b",
+          "standard": "NGSS 4-PS1-1b",
+          "name": "Particles too small to see",
+          "description": "Matter is made of tiny particles; particle arrangement explains observable properties",
+          "grade": 4,
+          "subject": "chemistry",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_4_01a"
+          ],
+          "unlocks": [
+            "chem_5_01a"
+          ]
+        }
+      ],
+      "grade_5": [
+        {
+          "id": "chem_5_01a",
+          "standard": "NGSS 5-PS1-1a",
+          "name": "Atoms and molecules",
+          "description": "All matter is made of atoms; atoms combine to form molecules; different atoms = different elements",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_4_01b"
+          ],
+          "unlocks": [
+            "chem_5_01b"
+          ]
+        },
+        {
+          "id": "chem_5_01b",
+          "standard": "NGSS 5-PS1-1b",
+          "name": "Elements and the periodic table (intro)",
+          "description": "Elements are pure substances made of one type of atom; the periodic table organizes all known elements",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "chem_5_01a"
+          ],
+          "unlocks": [
+            "chem_5_02a"
+          ]
+        },
+        {
+          "id": "chem_5_02a",
+          "standard": "NGSS 5-PS1-2a",
+          "name": "Solids, liquids, and gases",
+          "description": "Matter exists in three common states; each has distinct particle arrangement and movement",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            4,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_5_01b"
+          ],
+          "unlocks": [
+            "chem_5_02b"
+          ]
+        },
+        {
+          "id": "chem_5_02b",
+          "standard": "NGSS 5-PS1-2b",
+          "name": "Changes of state",
+          "description": "Matter changes state when heated or cooled: melting, freezing, evaporation, condensation, sublimation",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_5_02a"
+          ],
+          "unlocks": [
+            "chem_5_03a"
+          ]
+        },
+        {
+          "id": "chem_5_03a",
+          "standard": "NGSS 5-PS1-3a",
+          "name": "Mixtures",
+          "description": "A mixture contains two or more substances that are physically combined but not chemically joined",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_5_02b"
+          ],
+          "unlocks": [
+            "chem_5_03b"
+          ]
+        },
+        {
+          "id": "chem_5_03b",
+          "standard": "NGSS 5-PS1-3b",
+          "name": "Solutions and dissolving",
+          "description": "A solution forms when a solute dissolves in a solvent; dissolving is mixing at particle level",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_5_03a"
+          ],
+          "unlocks": [
+            "chem_5_03c"
+          ]
+        },
+        {
+          "id": "chem_5_03c",
+          "standard": "NGSS 5-PS1-3c",
+          "name": "Separating mixtures",
+          "description": "Mixtures can be separated using physical properties: filtration, evaporation, magnetism, density",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_5_03b"
+          ],
+          "unlocks": [
+            "chem_5_04a"
+          ]
+        },
+        {
+          "id": "chem_5_04a",
+          "standard": "NGSS 5-PS1-4a",
+          "name": "Mass is conserved in physical changes",
+          "description": "When matter changes state or is mixed, the total mass stays the same",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            7
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_5_03c"
+          ],
+          "unlocks": [
+            "chem_5_04b"
+          ]
+        },
+        {
+          "id": "chem_5_04b",
+          "standard": "NGSS 5-PS1-4b",
+          "name": "Mass is conserved in chemical changes",
+          "description": "Even when new substances form in a chemical reaction, the total mass of reactants equals products",
+          "grade": 5,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "true_false_why",
+            "word_problem",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "chem_5_04a"
+          ],
+          "unlocks": [
+            "chem_6_01a"
+          ]
+        }
+      ],
+      "grade_6": [
+        {
+          "id": "chem_6_01a",
+          "standard": "NGSS MS-PS1-1a",
+          "name": "Atomic structure",
+          "description": "Atoms have a nucleus containing protons and neutrons, surrounded by electrons; atomic number defines elements",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_5_04b"
+          ],
+          "unlocks": [
+            "chem_6_01b"
+          ]
+        },
+        {
+          "id": "chem_6_01b",
+          "standard": "NGSS MS-PS1-1b",
+          "name": "The periodic table",
+          "description": "Elements in the periodic table are organized by atomic number; rows are periods, columns are groups with similar properties",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "fill_blank_numeric",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_6_01a"
+          ],
+          "unlocks": [
+            "chem_6_02a"
+          ]
+        },
+        {
+          "id": "chem_6_02a",
+          "standard": "NGSS MS-PS1-2a",
+          "name": "Signs of a chemical reaction",
+          "description": "Evidence of chemical reactions: color change, gas production, temperature change, precipitate formation",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_6_01b"
+          ],
+          "unlocks": [
+            "chem_6_02b"
+          ]
+        },
+        {
+          "id": "chem_6_02b",
+          "standard": "NGSS MS-PS1-2b",
+          "name": "Reactants and products",
+          "description": "In a chemical reaction, reactants are consumed and products are formed; properties of products differ from reactants",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "chem_6_02a"
+          ],
+          "unlocks": [
+            "chem_7_01a"
+          ]
+        },
+        {
+          "id": "chem_6_03a",
+          "standard": "NGSS MS-PS1-4a",
+          "name": "Temperature and particle motion",
+          "description": "Temperature measures the average kinetic energy of particles; higher temperature = faster particle movement",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why",
+            "fill_blank_numeric"
+          ],
+          "prerequisites": [
+            "chem_6_01b"
+          ],
+          "unlocks": [
+            "chem_6_03b"
+          ]
+        },
+        {
+          "id": "chem_6_03b",
+          "standard": "NGSS MS-PS1-4b",
+          "name": "Heat transfer and changes of state",
+          "description": "Adding or removing heat energy causes changes of state; boiling/melting points are characteristic properties",
+          "grade": 6,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_6_03a"
+          ],
+          "unlocks": [
+            "chem_7_02a"
+          ]
+        }
+      ],
+      "grade_7": [
+        {
+          "id": "chem_7_01a",
+          "standard": "NGSS MS-PS1-5a",
+          "name": "Atoms rearrange in reactions",
+          "description": "Chemical reactions involve breaking and forming bonds; atoms are rearranged but not created or destroyed",
+          "grade": 7,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_6_02b"
+          ],
+          "unlocks": [
+            "chem_7_01b"
+          ]
+        },
+        {
+          "id": "chem_7_01b",
+          "standard": "NGSS MS-PS1-5b",
+          "name": "Balancing chemical equations",
+          "description": "Chemical equations must be balanced; the number of each type of atom is the same on both sides",
+          "grade": 7,
+          "subject": "chemistry",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "fill_blank_numeric",
+            "multi_step",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "chem_7_01a"
+          ],
+          "unlocks": [
+            "chem_8_01a"
+          ]
+        },
+        {
+          "id": "chem_7_02a",
+          "standard": "NGSS MS-PS1-6a",
+          "name": "Exothermic reactions",
+          "description": "Exothermic reactions release energy as heat or light; products have less energy than reactants",
+          "grade": 7,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_6_03b"
+          ],
+          "unlocks": [
+            "chem_7_02b"
+          ]
+        },
+        {
+          "id": "chem_7_02b",
+          "standard": "NGSS MS-PS1-6b",
+          "name": "Endothermic reactions",
+          "description": "Endothermic reactions absorb energy from the surroundings; products have more energy than reactants",
+          "grade": 7,
+          "subject": "chemistry",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_7_02a"
+          ],
+          "unlocks": [
+            "chem_8_02a"
+          ]
+        }
+      ],
+      "grade_8": [
+        {
+          "id": "chem_8_01a",
+          "standard": "NGSS MS-PS1-7a",
+          "name": "Polymers and synthetic materials",
+          "description": "Polymers are large molecules made of repeating units; plastics, nylon, and rubber are synthetic polymers",
+          "grade": 8,
+          "subject": "chemistry",
+          "difficulty_range": [
+            7,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "chem_7_01b"
+          ],
+          "unlocks": [
+            "chem_8_01b"
+          ]
+        },
+        {
+          "id": "chem_8_01b",
+          "standard": "NGSS MS-PS1-7b",
+          "name": "Designing materials for a purpose",
+          "description": "Scientists design new materials with specific properties by modifying molecular structure",
+          "grade": 8,
+          "subject": "chemistry",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_8_01a"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "chem_8_02a",
+          "standard": "NGSS MS-PS3-4a",
+          "name": "Chemical energy in fuels",
+          "description": "Fuels store chemical energy; combustion releases this energy as heat and light",
+          "grade": 8,
+          "subject": "chemistry",
+          "difficulty_range": [
+            7,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "chem_7_02b"
+          ],
+          "unlocks": [
+            "chem_8_02b"
+          ]
+        },
+        {
+          "id": "chem_8_02b",
+          "standard": "NGSS MS-PS3-4b",
+          "name": "Chemical energy in food and biology",
+          "description": "Cellular respiration releases chemical energy from glucose; connects chemistry to life science",
+          "grade": 8,
+          "subject": "chemistry",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "ordering",
+            "true_false_why",
+            "multi_step"
+          ],
+          "prerequisites": [
+            "chem_8_02a"
+          ],
+          "unlocks": []
+        }
+      ]
+    },
+    "earth_science": {
+      "grade_1": [
+        {
+          "id": "earth_1_01a",
+          "standard": "NGSS 1-ESS1-1a",
+          "name": "The sun's daily pattern",
+          "description": "The sun appears to rise in the east and set in the west each day due to Earth's rotation",
+          "grade": 1,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "earth_1_01b"
+          ]
+        },
+        {
+          "id": "earth_1_01b",
+          "standard": "NGSS 1-ESS1-1b",
+          "name": "Moon and star patterns",
+          "description": "The moon appears in different shapes (phases) over a month; stars appear to move across the night sky",
+          "grade": 1,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_1_01a"
+          ],
+          "unlocks": [
+            "earth_1_02a"
+          ]
+        },
+        {
+          "id": "earth_1_02a",
+          "standard": "NGSS 1-ESS1-2a",
+          "name": "Seasonal changes in daylight",
+          "description": "The number of daylight hours changes with the seasons; summer has longer days, winter has shorter days",
+          "grade": 1,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "earth_1_01b"
+          ],
+          "unlocks": [
+            "earth_1_02b"
+          ]
+        },
+        {
+          "id": "earth_1_02b",
+          "standard": "NGSS 1-ESS1-2b",
+          "name": "Seasonal temperature and organism behavior",
+          "description": "Temperature changes seasonally; animals and plants respond to these changes",
+          "grade": 1,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "earth_1_02a"
+          ],
+          "unlocks": [
+            "earth_2_01a"
+          ]
+        }
+      ],
+      "grade_2": [
+        {
+          "id": "earth_2_01a",
+          "standard": "NGSS 2-ESS1-1a",
+          "name": "Wind and water shape Earth",
+          "description": "Wind and water slowly wear away rock and soil and deposit it elsewhere over long time periods",
+          "grade": 2,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_1_02b"
+          ],
+          "unlocks": [
+            "earth_2_01b"
+          ]
+        },
+        {
+          "id": "earth_2_01b",
+          "standard": "NGSS 2-ESS1-1b",
+          "name": "How humans change the landscape",
+          "description": "Humans modify Earth's surface by building, mining, farming, and planting; some changes help, some harm",
+          "grade": 2,
+          "subject": "earth_science",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_2_01a"
+          ],
+          "unlocks": [
+            "earth_3_01a"
+          ]
+        },
+        {
+          "id": "earth_2_02a",
+          "standard": "NGSS 2-ESS2-3a",
+          "name": "Where is water on Earth?",
+          "description": "Water is found in oceans (saltwater), rivers, lakes (freshwater), and as ice in glaciers and polar regions",
+          "grade": 2,
+          "subject": "earth_science",
+          "difficulty_range": [
+            1,
+            3
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [],
+          "unlocks": [
+            "earth_2_02b"
+          ]
+        },
+        {
+          "id": "earth_2_02b",
+          "standard": "NGSS 2-ESS2-3b",
+          "name": "The water cycle basics",
+          "description": "Water evaporates from surfaces, forms clouds, and falls back as rain or snow \u2014 constantly cycling",
+          "grade": 2,
+          "subject": "earth_science",
+          "difficulty_range": [
+            2,
+            4
+          ],
+          "question_formats": [
+            "ordering",
+            "multiple_choice",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "earth_2_02a"
+          ],
+          "unlocks": [
+            "earth_3_02a"
+          ]
+        }
+      ],
+      "grade_3": [
+        {
+          "id": "earth_3_01a",
+          "standard": "NGSS 3-ESS2-1a",
+          "name": "Weather vs. climate",
+          "description": "Weather is day-to-day conditions; climate is the long-term average weather pattern for a region",
+          "grade": 3,
+          "subject": "earth_science",
+          "difficulty_range": [
+            2,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "true_false_why",
+            "word_problem"
+          ],
+          "prerequisites": [
+            "earth_2_01b"
+          ],
+          "unlocks": [
+            "earth_3_01b"
+          ]
+        },
+        {
+          "id": "earth_3_01b",
+          "standard": "NGSS 3-ESS2-1b",
+          "name": "Climate patterns across regions",
+          "description": "Different regions have different climates; scientists use data over many years to describe climate",
+          "grade": 3,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_3_01a"
+          ],
+          "unlocks": [
+            "earth_4_01a"
+          ]
+        },
+        {
+          "id": "earth_3_02a",
+          "standard": "NGSS 3-ESS3-1a",
+          "name": "Earthquakes and volcanoes",
+          "description": "Earthquakes and volcanic eruptions are caused by movements of Earth's crust; they can be destructive",
+          "grade": 3,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_2_02b"
+          ],
+          "unlocks": [
+            "earth_3_02b"
+          ]
+        },
+        {
+          "id": "earth_3_02b",
+          "standard": "NGSS 3-ESS3-1b",
+          "name": "Preparing for natural hazards",
+          "description": "Communities use science to predict, prepare for, and reduce the impact of natural hazards",
+          "grade": 3,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering"
+          ],
+          "prerequisites": [
+            "earth_3_02a"
+          ],
+          "unlocks": [
+            "earth_4_02a"
+          ]
+        }
+      ],
+      "grade_4": [
+        {
+          "id": "earth_4_01a",
+          "standard": "NGSS 4-ESS2-1a",
+          "name": "Weathering breaks down rock",
+          "description": "Physical and chemical weathering breaks rock into smaller pieces over time; creates soil",
+          "grade": 4,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_3_01b"
+          ],
+          "unlocks": [
+            "earth_4_01b"
+          ]
+        },
+        {
+          "id": "earth_4_01b",
+          "standard": "NGSS 4-ESS2-1b",
+          "name": "Erosion and deposition",
+          "description": "Erosion moves weathered material; deposition drops it in a new location, building landforms",
+          "grade": 4,
+          "subject": "earth_science",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_4_01a"
+          ],
+          "unlocks": [
+            "earth_5_01a"
+          ]
+        },
+        {
+          "id": "earth_4_02a",
+          "standard": "NGSS 4-ESS3-1a",
+          "name": "Earth's renewable resources",
+          "description": "Renewable resources (sunlight, wind, water, plants) replenish naturally and can be used sustainably",
+          "grade": 4,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            5
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_3_02b"
+          ],
+          "unlocks": [
+            "earth_4_02b"
+          ]
+        },
+        {
+          "id": "earth_4_02b",
+          "standard": "NGSS 4-ESS3-1b",
+          "name": "Earth's non-renewable resources",
+          "description": "Fossil fuels and minerals form over millions of years; once used, they are gone; conservation matters",
+          "grade": 4,
+          "subject": "earth_science",
+          "difficulty_range": [
+            3,
+            6
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "earth_4_02a"
+          ],
+          "unlocks": [
+            "earth_5_02a"
+          ]
+        }
+      ],
+      "grade_5": [
+        {
+          "id": "earth_5_01a",
+          "standard": "NGSS 5-ESS2-1a",
+          "name": "Earth's four systems",
+          "description": "Earth has four interacting systems: geosphere (rock), hydrosphere (water), atmosphere (air), biosphere (life)",
+          "grade": 5,
+          "subject": "earth_science",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_4_01b"
+          ],
+          "unlocks": [
+            "earth_5_01b"
+          ]
+        },
+        {
+          "id": "earth_5_01b",
+          "standard": "NGSS 5-ESS2-1b",
+          "name": "How Earth's systems interact",
+          "description": "Events in one system affect others: volcanic eruptions change the atmosphere, rain shapes the geosphere",
+          "grade": 5,
+          "subject": "earth_science",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_5_01a"
+          ],
+          "unlocks": [
+            "earth_6_01a"
+          ]
+        },
+        {
+          "id": "earth_5_02a",
+          "standard": "NGSS 5-ESS3-1a",
+          "name": "Human activities and Earth",
+          "description": "Human activities such as deforestation, pollution, and burning fossil fuels affect Earth's systems",
+          "grade": 5,
+          "subject": "earth_science",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_4_02b"
+          ],
+          "unlocks": [
+            "earth_5_02b"
+          ]
+        },
+        {
+          "id": "earth_5_02b",
+          "standard": "NGSS 5-ESS3-1b",
+          "name": "Solutions to protect Earth",
+          "description": "Humans can reduce their impact: recycling, renewable energy, conservation, and land protection",
+          "grade": 5,
+          "subject": "earth_science",
+          "difficulty_range": [
+            4,
+            7
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_5_02a"
+          ],
+          "unlocks": [
+            "earth_6_02a"
+          ]
+        }
+      ],
+      "grade_6": [
+        {
+          "id": "earth_6_01a",
+          "standard": "NGSS MS-ESS2-1a",
+          "name": "Plate tectonics",
+          "description": "Earth's crust is divided into tectonic plates that move slowly; their movement causes earthquakes and volcanoes",
+          "grade": 6,
+          "subject": "earth_science",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_5_01b"
+          ],
+          "unlocks": [
+            "earth_6_01b"
+          ]
+        },
+        {
+          "id": "earth_6_01b",
+          "standard": "NGSS MS-ESS2-1b",
+          "name": "The rock cycle",
+          "description": "Rocks transform between igneous, sedimentary, and metamorphic types through heat, pressure, and erosion",
+          "grade": 6,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "ordering",
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_6_01a"
+          ],
+          "unlocks": [
+            "earth_7_01a"
+          ]
+        },
+        {
+          "id": "earth_6_02a",
+          "standard": "NGSS MS-ESS3-3a",
+          "name": "Evidence for climate change",
+          "description": "Data from ice cores, sea levels, temperature records, and glaciers show Earth is warming",
+          "grade": 6,
+          "subject": "earth_science",
+          "difficulty_range": [
+            5,
+            8
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why",
+            "ordering"
+          ],
+          "prerequisites": [
+            "earth_5_02b"
+          ],
+          "unlocks": [
+            "earth_6_02b"
+          ]
+        },
+        {
+          "id": "earth_6_02b",
+          "standard": "NGSS MS-ESS3-3b",
+          "name": "Causes of climate change",
+          "description": "Rising CO\u2082 and greenhouse gases from human activity trap heat; this drives global warming",
+          "grade": 6,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_6_02a"
+          ],
+          "unlocks": [
+            "earth_7_02a"
+          ]
+        }
+      ],
+      "grade_7": [
+        {
+          "id": "earth_7_01a",
+          "standard": "NGSS MS-ESS1-4a",
+          "name": "Geologic time scale",
+          "description": "Earth's 4.6-billion-year history is divided into eons, eras, periods; events are traced through rock layers",
+          "grade": 7,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "ordering",
+            "multiple_choice",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_6_01b"
+          ],
+          "unlocks": [
+            "earth_7_01b"
+          ]
+        },
+        {
+          "id": "earth_7_01b",
+          "standard": "NGSS MS-ESS1-4b",
+          "name": "Fossils and evolution evidence",
+          "description": "Fossils provide evidence of past life; the fossil record shows how organisms changed over time",
+          "grade": 7,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "ordering",
+            "word_problem",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_7_01a"
+          ],
+          "unlocks": [
+            "earth_8_01a"
+          ]
+        },
+        {
+          "id": "earth_7_02a",
+          "standard": "NGSS MS-ESS3-5a",
+          "name": "Impacts of climate change",
+          "description": "Climate change causes sea level rise, extreme weather events, habitat loss, and species extinction",
+          "grade": 7,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_6_02b"
+          ],
+          "unlocks": [
+            "earth_7_02b"
+          ]
+        },
+        {
+          "id": "earth_7_02b",
+          "standard": "NGSS MS-ESS3-5b",
+          "name": "Evaluating climate solutions",
+          "description": "Evaluate trade-offs of solutions: renewable energy, carbon capture, conservation policies",
+          "grade": 7,
+          "subject": "earth_science",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "ordering",
+            "true_false_why",
+            "multiple_choice"
+          ],
+          "prerequisites": [
+            "earth_7_02a"
+          ],
+          "unlocks": [
+            "earth_8_02a"
+          ]
+        }
+      ],
+      "grade_8": [
+        {
+          "id": "earth_8_01a",
+          "standard": "NGSS MS-ESS2-3a",
+          "name": "The water cycle in depth",
+          "description": "Water cycles through evaporation, condensation, precipitation, and runoff; groundwater and aquifers",
+          "grade": 8,
+          "subject": "earth_science",
+          "difficulty_range": [
+            6,
+            9
+          ],
+          "question_formats": [
+            "ordering",
+            "word_problem",
+            "fill_blank_numeric",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_7_01b"
+          ],
+          "unlocks": [
+            "earth_8_01b"
+          ]
+        },
+        {
+          "id": "earth_8_01b",
+          "standard": "NGSS MS-ESS2-3b",
+          "name": "Ocean currents and climate",
+          "description": "Ocean currents distribute heat globally; thermohaline circulation affects regional climates",
+          "grade": 8,
+          "subject": "earth_science",
+          "difficulty_range": [
+            7,
+            10
+          ],
+          "question_formats": [
+            "multiple_choice",
+            "word_problem",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_8_01a"
+          ],
+          "unlocks": []
+        },
+        {
+          "id": "earth_8_02a",
+          "standard": "NGSS MS-ESS3-4a",
+          "name": "Resource use and sustainability",
+          "description": "Analyze how current resource use rates compare to renewal rates; define sustainability",
+          "grade": 8,
+          "subject": "earth_science",
+          "difficulty_range": [
+            7,
+            9
+          ],
+          "question_formats": [
+            "word_problem",
+            "ordering",
+            "multiple_choice",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_7_02b"
+          ],
+          "unlocks": [
+            "earth_8_02b"
+          ]
+        },
+        {
+          "id": "earth_8_02b",
+          "standard": "NGSS MS-ESS3-4b",
+          "name": "Designing sustainable solutions",
+          "description": "Design and evaluate solutions for sustainable resource management using cost-benefit analysis",
+          "grade": 8,
+          "subject": "earth_science",
+          "difficulty_range": [
+            8,
+            10
+          ],
+          "question_formats": [
+            "word_problem",
+            "multi_step",
+            "ordering",
+            "true_false_why"
+          ],
+          "prerequisites": [
+            "earth_8_02a"
+          ],
+          "unlocks": []
+        }
+      ]
+    }
+  },
+  "question_formats": {
+    "multiple_choice": {
+      "id": "multiple_choice",
+      "description": "4-option single answer; no trick questions",
+      "suitable_for": "concept recognition, definitions, recall",
+      "difficulty_weight": 0.8
+    },
+    "fill_blank_numeric": {
+      "id": "fill_blank_numeric",
+      "description": "Student types an exact number; accept equivalent forms",
+      "suitable_for": "math computation, physics calculations",
+      "difficulty_weight": 1.2
+    },
+    "ordering": {
+      "id": "ordering",
+      "description": "Drag-and-drop sequence or ranking",
+      "suitable_for": "processes, sequences, classification",
+      "difficulty_weight": 1.0
+    },
+    "true_false_why": {
+      "id": "true_false_why",
+      "description": "True/false then select the reason from 3 options",
+      "suitable_for": "misconception busting, conceptual depth",
+      "difficulty_weight": 1.1
+    },
+    "word_problem": {
+      "id": "word_problem",
+      "description": "Scenario wrapping the concept; Claude generates personalized scenarios",
+      "suitable_for": "all subjects; highest engagement",
+      "difficulty_weight": 1.3
+    },
+    "multi_step": {
+      "id": "multi_step",
+      "description": "Student fills intermediate steps before final answer",
+      "suitable_for": "advanced math, physics problem-solving",
+      "difficulty_weight": 1.5
+    }
+  },
+  "mastery_thresholds": {
+    "fall_back": 40,
+    "stay_and_advance": 80,
+    "window_size": 8,
+    "recency_decay": 0.5,
+    "difficulty_bonus_max": 0.5,
+    "grade_promotion_requires": "all topics in grade >= 80 confidence"
+  },
+  "streak": {
+    "grace_freeze_per_week": 1,
+    "session_minimum_questions": 5,
+    "daily_xp_bonus_multiplier": 1.5,
+    "streak_milestones": [
+      3,
+      7,
+      14,
+      30,
+      60,
+      100
+    ]
+  }
+}

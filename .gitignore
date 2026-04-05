@@ -1,0 +1,17 @@
+# Environment variables — never commit
+.env
+.env.local
+.env.*.local
+
+# Next.js
+.next/
+out/
+
+# Node
+node_modules/
+
+# Build output
+dist/
+
+# OS
+.DS_Store

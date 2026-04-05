@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   KnowledgeQuest Design System — Section 4
+   All values are canonical. Do NOT override with generic Tailwind defaults.
+───────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Color palette ───────────────────────────────────────────────────────── */
+  --color-bg-base:             #0F1117; /* Primary background — almost-black navy */
+  --color-bg-surface:          #1A1F2E; /* Cards, panels, elevated surfaces */
+  --color-bg-raised:           #242938; /* Hover states, nested cards */
+  --color-border:              #2E3347; /* Dividers and card borders */
+
+  --color-text-primary:        #F0F2F8; /* Main text — cool white */
+  --color-text-secondary:      #8B92A8; /* Captions, labels, helper text */
+  --color-text-muted:          #4A5068; /* Disabled text, placeholders */
+
+  --color-accent-violet:       #7C6EF5; /* Primary CTA buttons, active nav, streak flame */
+  --color-accent-violet-hover: #6458D4; /* Button hover state */
+  --color-accent-cyan:         #2DD4BF; /* Success states, mastered badges, XP gains */
+  --color-accent-amber:        #F59E0B; /* In-progress topics, streak counter */
+  --color-accent-rose:         #F43F5E; /* Wrong answer flash, fallback alerts */
+  --color-accent-emerald:      #10B981; /* Correct answer confirmation */
+
+  /* ── Subject colors ──────────────────────────────────────────────────────── */
+  --color-math:                #7C6EF5;
+  --color-physics:             #2DD4BF;
+  --color-chemistry:           #F59E0B;
+  --color-earth:               #10B981;
+
+  /* ── Typography
+     Font families injected by next/font in layout.tsx:
+     var(--font-sora), var(--font-dm-sans), var(--font-jetbrains-mono)  */
+
+  /* ── Border radius ───────────────────────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-card: 16px;
+  --radius-lg:   20px;
+  --radius-pill: 9999px;
+
+  /* ── Shadows ─────────────────────────────────────────────────────────────── */
+  --shadow-surface:    0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(124, 110, 245, 0.15);
+  --shadow-glow:       0 0 20px rgba(124, 110, 245, 0.3);
+
+  /* ── Motion ──────────────────────────────────────────────────────────────── */
+  --transition-default:     200ms ease-out;
+  --transition-explanation: 300ms ease-out;
+  --transition-celebration: 400ms ease-out;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+html {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-dm-sans, ui-sans-serif, system-ui, sans-serif);
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* ── Atmospheric depth — radial gradient mesh over the base colour ───────
+     Two soft colour blooms (violet top-right, cyan bottom-left) give the dark
+     background a sense of depth without overriding any Section 4 token.     */
+  background-image:
+    radial-gradient(ellipse 80% 50% at 75% -10%,  rgba(124, 110, 245, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 10% 110%,  rgba(45,  212, 191, 0.08) 0%, transparent 55%);
+  background-attachment: fixed;
+}
+
+/* ── Grain overlay — adds tactile texture to the flat background ──────────
+   A tiny base64-encoded SVG noise filter; pure CSS, zero extra requests.   */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* Ensure all page content renders above the grain overlay */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Focus rings — always visible (WCAG 2.1 AA) ─────────────────────────── */
+*:focus-visible {
+  outline: 2px solid var(--color-accent-violet);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Typography scale ────────────────────────────────────────────────────── */
+.text-display {
+  font-family: var(--font-sora, ui-sans-serif);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.text-h1 {
+  font-family: var(--font-sora, ui-sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.text-h2 {
+  font-family: var(--font-sora, ui-sans-serif);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.text-h3 {
+  font-family: var(--font-sora, ui-sans-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.text-body-lg {
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.text-body {
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.text-sm-sq {
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.text-xs-sq {
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ── Card ─────────────────────────────────────────────────────────────────── */
+.card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-surface);
+  transition: transform var(--transition-default), box-shadow var(--transition-default);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ── Primary button (violet CTA) ─────────────────────────────────────────── */
+.btn-primary {
+  background-color: var(--color-accent-violet);
+  color: var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  min-height: 44px;
+  min-width: 44px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-default), transform 100ms ease-out;
+}
+.btn-primary:hover  { background-color: var(--color-accent-violet-hover); }
+.btn-primary:active { transform: scale(0.97); }
+
+/* ── Badge / pill ─────────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+}
+
+/* ── Monospace (hashes, debug) ───────────────────────────────────────────── */
+.mono {
+  font-family: var(--font-jetbrains-mono, ui-monospace, monospace);
+  font-size: 12px;
+}
+
+/* ── Primary CTA — animated gradient glow (alive, not static) ───────────── */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(124, 110, 245, 0.4), 0 0 32px rgba(124, 110, 245, 0.15); }
+  50%       { box-shadow: 0 0 20px rgba(124, 110, 245, 0.65), 0 0 48px rgba(124, 110, 245, 0.25); }
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Apply to any element that should feel like the primary action */
+.btn-primary-glow {
+  background: linear-gradient(135deg, #7C6EF5, #6458D4, #2DD4BF, #7C6EF5);
+  background-size: 300% 300%;
+  animation:
+    gradient-shift 4s ease infinite,
+    glow-pulse 2.5s ease-in-out infinite;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-dm-sans, ui-sans-serif);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  min-height: 44px;
+  min-width: 44px;
+  border: none;
+  cursor: pointer;
+  transition: transform 100ms ease-out, filter var(--transition-default);
+}
+
+.btn-primary-glow:hover {
+  filter: brightness(1.1);
+}
+
+.btn-primary-glow:active {
+  transform: scale(0.97);
+  animation-play-state: paused;
+}
+
+/* ── Page transitions ────────────────────────────────────────────────────── */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: pageEnter 300ms ease-out both;
+}
+
+/* ── Correct / Wrong answer flash ────────────────────────────────────────── */
+@keyframes correctFlash {
+  0%   { box-shadow: 0 0 0 0   rgba(16, 185, 129, 0); }
+  30%  { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.5); }
+  100% { box-shadow: 0 0 0 0   rgba(16, 185, 129, 0); }
+}
+
+@keyframes wrongFlash {
+  0%   { box-shadow: 0 0 0 0   rgba(244, 63, 94, 0); }
+  30%  { box-shadow: 0 0 0 6px rgba(244, 63, 94, 0.5); }
+  100% { box-shadow: 0 0 0 0   rgba(244, 63, 94, 0); }
+}
+
+.answer-flash-correct {
+  animation: correctFlash 600ms ease-out both;
+}
+
+.answer-flash-wrong {
+  animation: wrongFlash 600ms ease-out both;
+}
+
+/* ── Icon scale on card hover ────────────────────────────────────────────── */
+.card:hover .card-icon {
+  transform: scale(1.05);
+  transition: transform var(--transition-default);
+}
+
+/* ── Reduced-motion overrides ────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration:   0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration:  0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Mobile touch targets — ensure ≥44px on small screens ───────────────── */
+@media (max-width: 640px) {
+  button,
+  [role="button"],
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Stack nav stats below logo on very small screens */
+  .navbar-stats {
+    display: none;
+  }
+}
+
+/* ── Scrollbar styling ───────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-base); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+/* ── Selection colour ────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(124, 110, 245, 0.3);
+  color: var(--color-text-primary);
+}

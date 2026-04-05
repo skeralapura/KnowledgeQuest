@@ -1,0 +1,30 @@
+{
+  "grade_1_2": [
+    { "question": "What is 3 + 4?", "correct_answer": "7", "format": "fill_blank_numeric" },
+    { "question": "What is 10 - 6?", "correct_answer": "4", "format": "fill_blank_numeric" },
+    { "question": "Which number comes after 9?", "correct_answer": "10", "format": "fill_blank_numeric" },
+    { "question": "How many sides does a triangle have?", "correct_answer": "3", "format": "fill_blank_numeric" },
+    { "question": "What is 2 + 2?", "correct_answer": "4", "format": "fill_blank_numeric" }
+  ],
+  "grade_3_4": [
+    { "question": "What is 7 × 8?", "correct_answer": "56", "format": "fill_blank_numeric" },
+    { "question": "What is 36 ÷ 6?", "correct_answer": "6", "format": "fill_blank_numeric" },
+    { "question": "What is 1/2 + 1/4?", "correct_answer": "3/4", "format": "fill_blank_numeric" },
+    { "question": "What is 100 - 37?", "correct_answer": "63", "format": "fill_blank_numeric" },
+    { "question": "What is 9 × 9?", "correct_answer": "81", "format": "fill_blank_numeric" }
+  ],
+  "grade_5_6": [
+    { "question": "What is 0.5 + 0.25?", "correct_answer": "0.75", "format": "fill_blank_numeric" },
+    { "question": "What is 20% of 50?", "correct_answer": "10", "format": "fill_blank_numeric" },
+    { "question": "What is 2³?", "correct_answer": "8", "format": "fill_blank_numeric" },
+    { "question": "What is the area of a rectangle 4 cm × 6 cm?", "correct_answer": "24", "format": "fill_blank_numeric" },
+    { "question": "What is 144 ÷ 12?", "correct_answer": "12", "format": "fill_blank_numeric" }
+  ],
+  "grade_7_8": [
+    { "question": "What is 15% of 200?", "correct_answer": "30", "format": "fill_blank_numeric" },
+    { "question": "Solve: 3x = 21. What is x?", "correct_answer": "7", "format": "fill_blank_numeric" },
+    { "question": "What is the square root of 64?", "correct_answer": "8", "format": "fill_blank_numeric" },
+    { "question": "What is 2/3 × 3/4?", "correct_answer": "1/2", "format": "fill_blank_numeric" },
+    { "question": "What is -5 + 12?", "correct_answer": "7", "format": "fill_blank_numeric" }
+  ]
+}
