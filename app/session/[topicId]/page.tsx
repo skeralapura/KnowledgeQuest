@@ -20,6 +20,7 @@ interface QuestionData {
   difficulty_delivered: number;
   format: string;
   question_hash: string;
+  concept_tag?: string;
   is_fallback?: boolean;
 }
 
@@ -69,6 +70,7 @@ export default function SessionPage() {
   const [lastMasteryStatus, setLastMasteryStatus] = useState("learning");
   const [difficultyOffset, setDifficultyOffset] = useState(0);
   const [excludedHashes, setExcludedHashes] = useState<string[]>([]);
+  const [excludedConcepts, setExcludedConcepts] = useState<string[]>([]);
   const [sessionDone, setSessionDone] = useState(false);
   const [milestoneDayModal, setMilestoneDayModal] = useState<number | null>(null);
   const sessionIdRef = useRef(crypto.randomUUID());
@@ -84,6 +86,7 @@ export default function SessionPage() {
     index: number,
     offset: number,
     excluded: string[],
+    concepts: string[],
     xp: number,
     attemptsArr: AttemptRecord[],
     masteryStatus: string,
@@ -94,6 +97,7 @@ export default function SessionPage() {
       questionIndex: index,
       difficultyOffset: offset,
       excludedHashes: excluded,
+      excludedConcepts: concepts,
       totalXP: xp,
       attempts: attemptsArr,
       lastMasteryStatus: masteryStatus,
@@ -114,7 +118,7 @@ export default function SessionPage() {
 
   // ── Fetch question ─────────────────────────────────────────────────────
   const fetchQuestion = useCallback(
-    async (offset: number, excluded: string[]) => {
+    async (offset: number, excluded: string[], concepts: string[] = []) => {
       setIsLoading(true);
       setLoadError("");
       setAnswerResult(null);
@@ -133,6 +137,7 @@ export default function SessionPage() {
             difficulty,
             effective_grade: effectiveGrade,
             excluded_hashes: excluded,
+            excluded_concepts: concepts,
           }),
         });
 
@@ -167,11 +172,12 @@ export default function SessionPage() {
         setQuestionIndex(state.questionIndex ?? 0);
         setDifficultyOffset(state.difficultyOffset ?? 0);
         setExcludedHashes(state.excludedHashes ?? []);
+        setExcludedConcepts(state.excludedConcepts ?? []);
         setTotalXP(state.totalXP ?? 0);
         setAttempts(state.attempts ?? []);
         setLastMasteryStatus(state.lastMasteryStatus ?? "learning");
         if (state.sessionId) sessionIdRef.current = state.sessionId;
-        fetchQuestion(state.difficultyOffset ?? 0, state.excludedHashes ?? []);
+        fetchQuestion(state.difficultyOffset ?? 0, state.excludedHashes ?? [], state.excludedConcepts ?? []);
         return;
       } catch {
         // Corrupted state — start fresh
@@ -230,6 +236,11 @@ export default function SessionPage() {
         setLastMasteryStatus(result.new_mastery_status);
         setDifficultyOffset(result.new_difficulty_offset);
         setExcludedHashes((prev) => [...prev, currentQuestion.question_hash]);
+        if (currentQuestion.concept_tag) {
+          setExcludedConcepts((prev) =>
+            prev.includes(currentQuestion.concept_tag!) ? prev : [...prev, currentQuestion.concept_tag!]
+          );
+        }
         setAttempts((prev) => [
           ...prev,
           {
@@ -293,12 +304,13 @@ export default function SessionPage() {
       nextIndex,
       difficultyOffset,
       excludedHashes,
+      excludedConcepts,
       totalXP,
       attempts,
       lastMasteryStatus,
       sessionIdRef.current,
     );
-    fetchQuestion(difficultyOffset, excludedHashes);
+    fetchQuestion(difficultyOffset, excludedHashes, excludedConcepts);
   }
 
   // ── Exit session ───────────────────────────────────────────────────────
@@ -340,9 +352,10 @@ export default function SessionPage() {
             setAttempts([]);
             setTotalXP(0);
             setExcludedHashes([]);
+            setExcludedConcepts([]);
             setDifficultyOffset(0);
             sessionIdRef.current = crypto.randomUUID();
-            fetchQuestion(0, []);
+            fetchQuestion(0, [], []);
           }}
         />
         {milestoneDayModal !== null && (
@@ -419,7 +432,7 @@ export default function SessionPage() {
           >
             {loadError}
             <button
-              onClick={() => fetchQuestion(difficultyOffset, excludedHashes)}
+              onClick={() => fetchQuestion(difficultyOffset, excludedHashes, excludedConcepts)}
               style={{
                 display: "block",
                 marginTop: 12,

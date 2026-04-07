@@ -105,6 +105,7 @@ export async function POST(request: NextRequest) {
     difficulty?: unknown;
     effective_grade?: unknown;
     excluded_hashes?: unknown;
+    excluded_concepts?: unknown;
     recent_wrong_concepts?: unknown;
   };
   try {
@@ -119,6 +120,9 @@ export async function POST(request: NextRequest) {
   const effectiveGrade = Math.round(Math.max(1, Math.min(8, Number(body.effective_grade) || 1)));
   const excludedHashes = Array.isArray(body.excluded_hashes)
     ? (body.excluded_hashes as unknown[]).filter((h): h is string => typeof h === "string")
+    : [];
+  const excludedConcepts = Array.isArray(body.excluded_concepts)
+    ? (body.excluded_concepts as unknown[]).filter((c): c is string => typeof c === "string")
     : [];
   const recentWrongConceptsRaw = typeof body.recent_wrong_concepts === "string"
     ? body.recent_wrong_concepts : "";
@@ -190,6 +194,7 @@ export async function POST(request: NextRequest) {
         interests: sanitized.interests,
         recentWrongConcepts: sanitized.recent_wrong_concepts,
         excludedHashes: currentExcluded,
+        excludedConcepts,
       });
     } catch (err) {
       lastFailureDetail = err instanceof Error ? err.message : "API call failed";
@@ -243,6 +248,7 @@ export async function POST(request: NextRequest) {
       difficulty_delivered: questionData.difficulty_delivered,
       format: questionData.format,
       question_hash: hash,   // use our own computed hash, not Claude's
+      concept_tag: typeof questionData.concept_tag === "string" ? questionData.concept_tag : undefined,
     });
   }
 

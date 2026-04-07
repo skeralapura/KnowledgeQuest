@@ -38,7 +38,8 @@ export interface QuestionRequest {
   format: string;
   interests: string[];           // sanitized via guardrails.sanitizeInputs()
   recentWrongConcepts: string;   // sanitized, ≤200 chars
-  excludedHashes: string[];      // last 5 SHA-256 hashes to avoid repeating
+  excludedHashes: string[];      // last 10 SHA-256 hashes to avoid repeating
+  excludedConcepts: string[];    // concept tags already used this session
 }
 
 export interface RawClaudeResponse {
@@ -59,6 +60,7 @@ export interface RawClaudeResponse {
 
 function buildUserPrompt(req: QuestionRequest): string {
   const hashList = req.excludedHashes.slice(-10).join(", ") || "none";
+  const conceptList = req.excludedConcepts.join(", ") || "none";
 
   return `Student: ${req.studentName} | Enrolled: Grade ${req.enrolledGrade} | Level: math Grade ${req.effectiveGrade}
 Topic: ${req.topicName} (${req.topicStandard})
@@ -68,6 +70,7 @@ Format: ${req.format}
 Interests: ${req.interests.join(", ") || "general"}
 Recent errors: ${req.recentWrongConcepts || "none"}
 Do NOT reuse concepts from these recent hashes: ${hashList}
+Do NOT reuse these concept types already covered this session: ${conceptList}
 
 Return JSON only — no markdown, no extra text:
 {
@@ -77,7 +80,8 @@ Return JSON only — no markdown, no extra text:
   "explanation": "string (brief encouraging explanation, ≤400 chars)",
   "difficulty_delivered": number (1–10, integer),
   "format": "${req.format}",
-  "question_hash": "string (16-char SHA-256 hex of the question text, lowercase)"
+  "question_hash": "string (16-char SHA-256 hex of the question text, lowercase)",
+  "concept_tag": "string (snake_case label for the concept tested, e.g. elapsed_time, ≤30 chars)"
 }
 
 IMPORTANT for multiple_choice: Put ONLY the question stem in "question". Put all answer options in "choices" as an array of exactly 4 strings like ["A) ...", "B) ...", "C) ...", "D) ..."]. The "correct_answer" must be one of the choices strings.`;
