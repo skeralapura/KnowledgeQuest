@@ -58,7 +58,7 @@ export interface RawClaudeResponse {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function buildUserPrompt(req: QuestionRequest): string {
-  const hashList = req.excludedHashes.slice(-5).join(", ") || "none";
+  const hashList = req.excludedHashes.slice(-10).join(", ") || "none";
 
   return `Student: ${req.studentName} | Enrolled: Grade ${req.enrolledGrade} | Level: math Grade ${req.effectiveGrade}
 Topic: ${req.topicName} (${req.topicStandard})

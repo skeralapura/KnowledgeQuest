@@ -37,7 +37,7 @@ import { hashQuestion, isQuestionSeen } from "@/lib/dedup";
 import type { Database } from "@/lib/database.types";
 
 // ── Constants ──────────────────────────────────────────────────────────────
-const MAX_RETRIES = 3;
+const MAX_RETRIES = 5;
 const RATE_LIMIT_PER_HOUR = 60;
 
 // In-memory rate limiter (per-student, resets on server restart).
@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
   const difficulty = Math.round(Math.max(1, Math.min(10, Number(body.difficulty) || 5)));
   const effectiveGrade = Math.round(Math.max(1, Math.min(8, Number(body.effective_grade) || 1)));
   const excludedHashes = Array.isArray(body.excluded_hashes)
-    ? (body.excluded_hashes as unknown[]).filter((h): h is string => typeof h === "string").slice(-5)
+    ? (body.excluded_hashes as unknown[]).filter((h): h is string => typeof h === "string")
     : [];
   const recentWrongConceptsRaw = typeof body.recent_wrong_concepts === "string"
     ? body.recent_wrong_concepts : "";
@@ -216,6 +216,15 @@ export async function POST(request: NextRequest) {
 
     // ── Dedup check (Section 7.3) ────────────────────────────────────────
     const hash = hashQuestion(questionData.question);
+
+    // Hard block: question already shown this session
+    if (currentExcluded.includes(hash)) {
+      lastFailureDetail = `session duplicate hash ${hash}`;
+      console.warn(`[generate-question] attempt ${attempt + 1} session dedup hit: ${hash}`);
+      continue;
+    }
+
+    // Cross-session block: student answered this correctly before
     const alreadySeen = await isQuestionSeen(studentId, hash);
 
     if (alreadySeen) {
